@@ -50,15 +50,26 @@ main form input{
     width: 70%;
 
 }
-.option{
+.option label{
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.option{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 .option input{
-    width: 10%;
+    display: block;
+    width: revert;
+    margin-right: 10%;
 }
+
 span{
     color: red;
     display: none;
