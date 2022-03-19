@@ -72,6 +72,7 @@ a{
 .cuotas{
     text-align: center;
     margin-top: 15px;
+    width: 100%;
 }
 
 i{
@@ -87,12 +88,16 @@ i{
 .logo{
     width: 40%;
     margin-bottom: 30px;
+    margin-right: 10%;
 }
 
 .buscadores{
     padding: 10px;
     width: 40%;
-    
+}
+
+.buscadores input{
+    width: 80%;
 }
 
 .precios{
@@ -186,7 +191,16 @@ header ul{
     }
     .mainNavBar{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 30%;
+    }
+    .buscadores{
+        width: 30%;
+    }
+    .cuotas{
+        width: 30%;
     }
     .mainNavBar ul{
         display: flex;
@@ -215,6 +229,7 @@ header ul{
         margin-left: 60px;
         margin-right: 20px;
         margin-top: 5px;
+        padding: 0;
     }
     main section article{
         width: 45%;
@@ -229,6 +244,9 @@ header ul{
     .botonTruck{
         font-size: 16px;
     }
+    .buscadores input{
+        width: 80%;
+    }
 }
 
 @media(min-width: 1080px){
@@ -237,7 +255,7 @@ header ul{
     }
     .mainNavBar{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .mainNavBar ul{
         display: flex;
@@ -264,6 +282,8 @@ header ul{
         margin-left: 60px;
         margin-right: 20px;
         margin-top: 5px;
+        text-align: center;
+        width: 30%;
     }
     main section article{
         width: 20%;
