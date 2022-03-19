@@ -1,0 +1,153 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+:root{
+    --Amarillo: #eac926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'reboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.desc-descripcion{
+    color:#39b54a;
+    font-size: 18px;
+    margin-top: 10px;
+    flex-grow: 0.7;
+}
+
+input{
+    color: var(--GrisOscuro);
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.precios{
+    font-size: 18px;
+    margin-top: 10px;
+    flex-grow: 0.3;
+}
+
+main{
+    width: 100%;
+    display: block;
+}
+
+main section article{
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.precio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productoDescripcion{
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+
+.descripcion{
+    display: none;
+}
+
+.botonTruck{
+    color: #39b54a;
+    border: #39b54a 1px solid;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 4px;
+    margin-bottom: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 25px
+    
+}
+
+@media(min-width: 480px){
+    .descripcion{
+        display: none;
+    }
+    main section article{
+        width: 45%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .botonTruck{
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1080px){
+    .descripcion{
+        display: none;
+    }
+    main section article{
+        width: 20%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .precios{
+        font-size: 13px;
+    }
+    .desc-descripcion{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 11px;
+    }
+    .botonTruck{
+        font-size: 14px;
+    }
+}

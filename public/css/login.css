@@ -1,0 +1,83 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+:root{
+    --Amarillo: #eac926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: var(--Amarillo);
+    padding: 5px;
+}
+
+label{
+    text-align: center;
+}
+
+main form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+main form label ~ input{
+    margin: 10px;
+    
+}
+
+main form input{
+    font-size: 20px;
+    width: 80%;
+    
+}
+main form button{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--celeste);
+    color: var(--gris--claro);
+    border-radius: 25px;
+}
+
+main p{
+    color: var(--amarillo);
+    background-color: var(--amarillo);
+    width: 100%;
+    font-size: 30px;
+}
+
+main form button:hover{
+    background-color: #0022AA;
+    transition: background-color,0.5s;
+}

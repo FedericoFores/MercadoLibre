@@ -1,0 +1,41 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+:root{
+    --Amarillo: #eac926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    font-family: 'roboto', sans-serif;
+}
+
+footer section{
+    text-align: center;
+    margin: 50px;
+}
+
+footer section i{
+    color: var(--Celeste);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 15px;
+}
