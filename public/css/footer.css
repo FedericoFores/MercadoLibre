@@ -39,3 +39,14 @@ footer section i{
 footer p{
     font-size: 15px;
 }
+
+@media(min-width: 1080px){
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    footer i:hover{
+        color: var(--Amarillo);
+        transition: color,0.5s;
+    }
+}

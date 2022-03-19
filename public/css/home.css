@@ -109,7 +109,12 @@ main section article{
 
 @media(min-width: 480px){
     .descripcion{
-        display: none;
+        display: block;
+        color: white;
+    }
+    .descripcion:hover{
+        color: black;
+        transition: color, 0.5s;
     }
     main section article{
         width: 45%;
@@ -123,12 +128,18 @@ main section article{
     }
     .botonTruck{
         font-size: 16px;
+        bottom: 100px;
     }
 }
 
 @media(min-width: 1080px){
     .descripcion{
-        display: none;
+        display: block;
+        color: white;
+    }
+    .descripcion:hover{
+        color: black;
+        transition: color, 0.5s;
     }
     main section article{
         width: 20%;
@@ -149,5 +160,19 @@ main section article{
     }
     .botonTruck{
         font-size: 14px;
+        bottom: 120px;
     }
+}
+
+main section article:hover .productoDescripcion .botonTruck{
+    animation: giro90grados 3s infinite;
+}
+
+@keyframes giro90grados{
+    0%{ 
+        transform: rotateZ(0deg);
+    }
+    100%{ 
+        transform: rotateZ(-90deg);
+    } 
 }
