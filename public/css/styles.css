@@ -1,0 +1,288 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+:root{
+    --Amarillo: #eac926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'reboto', sans-serif;
+}
+
+header{
+    background-color: var(--Amarillo);
+}
+
+p{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.desc-descripcion{
+    color:#39b54a;
+    font-size: 18px;
+    margin-top: 10px;
+    flex-grow: 0.7;
+}
+
+input{
+    color: var(--GrisOscuro);
+}
+
+ul{
+    padding: 0;
+    margin: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+.cuotas{
+    text-align: center;
+    margin-top: 15px;
+}
+
+i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.divSuperiorHead{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.buscadores{
+    padding: 10px;
+    width: 40%;
+    
+}
+
+.precios{
+    font-size: 18px;
+    margin-top: 10px;
+    flex-grow: 0.3;
+}
+
+.burguer-menu{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    padding-bottom: 15px;
+}
+
+.burguer-menu i{
+    padding: 10px;
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    display: inline;
+    margin: auto 0;
+    color: white;
+}
+
+footer{
+    font-family: 'roboto', sans-serif;
+}
+
+footer section{
+    text-align: center;
+    margin: 50px;
+}
+
+footer section i{
+    color: var(--Celeste);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+main{
+    width: 100%;
+    display: block;
+}
+
+main section article{
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.precio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productoDescripcion{
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+
+.descripcion{
+    display: none;
+}
+
+header ul{
+    display: none;
+}
+
+.botonTruck{
+    color: #39b54a;
+    border: #39b54a 1px solid;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 4px;
+    margin-bottom: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 25px
+    
+}
+
+@media(min-width: 480px){
+    .descripcion{
+        display: none;
+    }
+    .mainNavBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainNavBar ul{
+        display: flex;
+    }
+    .mainNavBar li{
+        margin: 0 5px
+    }
+    .burguer-menu{
+        display:none
+    }
+    .divSuperiorHead{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .logo{
+        width: 25%;
+        margin-top: 10px;
+    }
+    .cuotas{
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    .buscadores{
+        margin-left: 60px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    main section article{
+        width: 45%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .botonTruck{
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1080px){
+    .descripcion{
+        display: none;
+    }
+    .mainNavBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainNavBar ul{
+        display: flex;
+    }
+    .mainNavBar li{
+        margin: 0 15px
+    }
+    .burguer-menu{
+        display:none
+    }
+    .divSuperiorHead{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .logo{
+        width: 25%;
+        margin-top: 10px;
+    }
+    .cuotas{
+        font-size: 17px;
+    }
+    .buscadores{
+        margin-left: 60px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    main section article{
+        width: 20%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .precios{
+        font-size: 13px;
+    }
+    .desc-descripcion{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 11px;
+    }
+    .botonTruck{
+        font-size: 14px;
+    }
+}
