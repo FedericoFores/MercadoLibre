@@ -10,5 +10,5 @@ app.get("/login", (req, res) => res.sendFile(path.join(__dirname, "views", "logi
 app.get("/register", (req, res) => res.sendFile(path.join(__dirname, "views", "register.html")))
 
 
-app.listen(port, () => console.log("estoy funcionando en el puerto " + PORT))
+app.listen(PORT, () => console.log("Servidor Funcionando"))
 
